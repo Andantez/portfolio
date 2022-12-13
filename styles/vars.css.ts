@@ -1,4 +1,4 @@
-import { createVar } from "@vanilla-extract/css";
+import { createVar } from '@vanilla-extract/css';
 
 // colour variables
 export const primaryColour = createVar();
@@ -7,10 +7,6 @@ export const accentColour = createVar();
 export const lightTextColour = createVar();
 export const darkTextColour = createVar();
 export const placeholderTextColour = createVar();
-
-// font family variables
-export const ffHeading = createVar();
-export const ffText = createVar();
 
 // font weight variables
 export const fwRegular = createVar();
