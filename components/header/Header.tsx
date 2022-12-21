@@ -2,7 +2,9 @@ import { Logo } from "../Icons";
 import NavbarList from "./NavbarList";
 import { nav } from "./Header.css";
 import { merriweather } from "../../lib/fonts";
-import ThemeToggle from "../Theme";
+import dynamic from "next/dynamic";
+
+const ThemeToggle = dynamic(() => import("../Theme"), { ssr: false });
 
 const Header = (): JSX.Element => {
   return (
