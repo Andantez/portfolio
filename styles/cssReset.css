@@ -54,6 +54,13 @@ h6 {
   overflow-wrap: break-word;
 }
 
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 #__next {
   isolation: isolate;
 }
