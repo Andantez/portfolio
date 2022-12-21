@@ -1,5 +1,19 @@
+import { useState } from "react";
+import { themeBtn } from "./Theme.css";
+
+type Theme = "light" | "dark";
 const ThemeToggle = () => {
-  return <button type="button">Switch Theme</button>;
+  const [activeTheme, setActiveTheme] = useState<Theme>("light");
+  const inactiveTheme = activeTheme === "light" ? "dark" : "light";
+  return (
+    <button
+      className={themeBtn}
+      type="button"
+      onClick={() => setActiveTheme(inactiveTheme)}
+    >
+      Switch Theme to {activeTheme}
+    </button>
+  );
 };
 
 export default ThemeToggle;

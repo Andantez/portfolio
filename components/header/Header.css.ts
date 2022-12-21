@@ -7,6 +7,11 @@ export const nav = style({
   padding: "1rem",
   maxWidth: 1400,
   margin: "0 auto",
+  "@media": {
+    "screen and (min-width: 64rem)": {
+      gap,
+    },
+  },
 });
 
 export const navList = style({
