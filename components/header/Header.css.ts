@@ -5,6 +5,8 @@ export const nav = style({
   display: "flex",
   alignItems: "center",
   padding: "1rem",
+  maxWidth: 1400,
+  margin: "0 auto",
 });
 
 export const navList = style({

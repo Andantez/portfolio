@@ -8,9 +8,10 @@ const Menu = () => {
       width="35"
       height="35"
       strokeLinecap="round"
-      strokeWidth="5"
+      strokeWidth="10"
     >
-      <path d="m 5 80 h 60 a 1 1 0 0 0 0 -60 l -60 60 m 0 -60 h 60 a 1 1 0 0 1 0 60 l -60 -60"></path>
+      <path d="m 20 30 h 60 a 1 1 0 0 1 0 30 h -60" />
+      <path d="m 80 30 h -60 a 1 1 0 0 0 0 30 h 60" />
     </svg>
   );
 };
