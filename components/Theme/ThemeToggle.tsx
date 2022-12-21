@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { Moon, Sun } from "../Icons";
 import { themeBtn } from "./Theme.css";
 
 type Theme = "light" | "dark";
+
 const ThemeToggle = () => {
   const [activeTheme, setActiveTheme] = useState<Theme>("light");
   const inactiveTheme = activeTheme === "light" ? "dark" : "light";
@@ -11,7 +13,7 @@ const ThemeToggle = () => {
       type="button"
       onClick={() => setActiveTheme(inactiveTheme)}
     >
-      Switch Theme to {activeTheme}
+      {activeTheme === "light" ? <Sun /> : <Moon />}
     </button>
   );
 };

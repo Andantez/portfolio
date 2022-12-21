@@ -5,6 +5,10 @@ export const themeBtn = style({
   "@media": {
     "screen and (min-width: 64rem)": {
       display: "block",
+      border: "transparent",
+      backgroundColor: "transparent",
+      cursor: "pointer",
+      padding: 0,
     },
   },
 });
