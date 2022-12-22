@@ -13,7 +13,7 @@
   "dependencies": {
     "@next/font": "^13.0.6",
     "@vanilla-extract/css": "^1.9.2",
-    "framer-motion": "^7.6.19",
+    "framer-motion": "^7.10.3",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
