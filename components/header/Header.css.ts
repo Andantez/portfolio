@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { fs300, gap, primaryColour } from "../../styles/vars.css";
+import { fs300, gap, textColor } from "../../styles/vars.css";
 
 export const nav = style({
   display: "flex",
@@ -16,7 +16,7 @@ export const nav = style({
 
 export const navList = style({
   marginLeft: "auto",
-  color: primaryColour,
+  color: textColor,
   "@media": {
     "screen and (min-width: 64rem)": {
       display: "flex",

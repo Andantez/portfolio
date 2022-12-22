@@ -1,7 +1,7 @@
 import { globalStyle } from "@vanilla-extract/css";
 import {
-  primaryColour,
-  secondaryColour,
+  textColor,
+  backgroundColor,
   accentColour,
   lightTextColour,
   darkTextColour,
@@ -22,8 +22,8 @@ import {
 
 globalStyle(":root", {
   vars: {
-    [primaryColour]: "#0D0D0D",
-    [secondaryColour]: "#FFFFFF",
+    [textColor]: "#0D0D0D",
+    [backgroundColor]: "#FFFFFF",
     [accentColour]: "#FF4250",
     [lightTextColour]: "#F8F8F8",
     [darkTextColour]: "#363636",
@@ -41,4 +41,22 @@ globalStyle(":root", {
     [fs900]: "13rem",
     [gap]: "1.5em",
   },
+});
+
+globalStyle('body[data-theme="light"]', {
+  vars: {
+    [textColor]: "#0D0D0D",
+    [backgroundColor]: "#FFFFFF",
+  },
+});
+
+globalStyle('body[data-theme="dark"]', {
+  vars: {
+    [textColor]: "#FFFFFF",
+    [backgroundColor]: "#0D0D0D",
+  },
+});
+
+globalStyle("body", {
+  backgroundColor,
 });

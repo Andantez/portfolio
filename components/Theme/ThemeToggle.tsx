@@ -9,7 +9,6 @@ const ThemeToggle = () => {
   const inactiveTheme = activeTheme === "light" ? "dark" : "light";
 
   useEffect(() => {
-    console.log(document.body.dataset.theme);
     document.body.dataset.theme = activeTheme;
     window.localStorage.setItem("theme", activeTheme);
   }, [activeTheme]);
