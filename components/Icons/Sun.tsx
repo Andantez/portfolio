@@ -1,8 +1,10 @@
+import { textColor } from "../../styles/vars.css";
+
 const Sun = () => {
   return (
     <svg
       fill="none"
-      stroke="currentColor"
+      stroke={textColor}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

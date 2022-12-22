@@ -1,3 +1,5 @@
+import { textColor } from "../../styles/vars.css";
+
 const Moon = () => {
   return (
     <svg
@@ -8,7 +10,7 @@ const Moon = () => {
     >
       <path
         fill="none"
-        stroke="currentColor"
+        stroke={textColor}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={32}
