@@ -1,8 +1,8 @@
 import { createVar } from "@vanilla-extract/css";
 
 // colour variables
-export const primaryColour = createVar();
-export const secondaryColour = createVar();
+export const textColor = createVar();
+export const backgroundColor = createVar();
 export const accentColour = createVar();
 export const lightTextColour = createVar();
 export const darkTextColour = createVar();
