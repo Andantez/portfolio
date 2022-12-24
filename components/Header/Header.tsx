@@ -1,4 +1,4 @@
-import { Logo } from "../Icons";
+import { Logo } from "../icons";
 import NavbarList from "./NavbarList";
 import { nav } from "./Header.css";
 import { merriweather } from "../../lib/fonts";

@@ -1,7 +1,7 @@
 import { navLinks } from "../../data";
 import Link from "next/link";
 import { navList, navItem, menuBtn } from "./Header.css";
-import { Menu } from "../Icons";
+import { Menu } from "../icons";
 const NavbarList = (): JSX.Element => {
   return (
     <ul className={navList}>
