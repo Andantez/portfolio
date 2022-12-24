@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Moon, Sun } from "../Icons";
+import { Moon, Sun } from "../icons";
 import { themeBtn } from "./Theme.css";
 
 const ThemeToggle = () => {
