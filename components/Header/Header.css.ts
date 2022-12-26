@@ -1,12 +1,12 @@
 import { style } from "@vanilla-extract/css";
-import { fs300, gap, textColor } from "../../styles/vars.css";
+import { gap } from "../../styles/vars.css";
 
 export const header = style({
-  position: 'absolute',
+  position: "absolute",
   top: 0,
   left: 0,
   right: 0,
-})
+});
 export const nav = style({
   display: "flex",
   alignItems: "center",
@@ -22,12 +22,9 @@ export const nav = style({
 
 export const navList = style({
   marginLeft: "auto",
-  color: textColor,
   "@media": {
     "screen and (min-width: 64rem)": {
       display: "flex",
-      fontFamily: "var(--ff-text)",
-      fontSize: fs300,
       gap,
     },
   },
