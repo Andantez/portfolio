@@ -1,13 +1,14 @@
 import { navLinks } from "../../data";
-import Link from "next/link";
 import { navList, navItem, menuBtn } from "./Header.css";
 import { Menu } from "../icons";
+import { NavLink } from "../ui";
+
 const NavbarList = (): JSX.Element => {
   return (
     <ul className={navList}>
       {navLinks.map(({ label, href }) => (
         <li key={label} className={navItem}>
-          <Link href={href}>{label}</Link>
+          <NavLink label={label} href={href} textSize="sm" />
         </li>
       ))}
       <li className={navItem}>
