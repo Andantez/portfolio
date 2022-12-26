@@ -6,9 +6,9 @@ import MainLayout from "../components/layout/MainLayout";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <MainLayout>
-      <main className={`${lora.variable} ${merriweather.variable}`}>
+      <div className={`${lora.variable} ${merriweather.variable}`}>
         <Component {...pageProps} />
-      </main>
+      </div>
     </MainLayout>
   );
 }

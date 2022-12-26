@@ -1,6 +1,12 @@
 import { style } from "@vanilla-extract/css";
 import { fs300, gap, textColor } from "../../styles/vars.css";
 
+export const header = style({
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  right: 0,
+})
 export const nav = style({
   display: "flex",
   alignItems: "center",
