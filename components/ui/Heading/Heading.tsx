@@ -4,10 +4,10 @@ interface HeadingProps {
 }
 const Heading = ({ mainHeading, title }: HeadingProps) => {
   return (
-    <div>
-      <div>{title}</div>
+    <section>
       <h1>{mainHeading}</h1>
-    </div>
+      {/* <div>{title}</div> */}
+    </section>
   );
 };
 
