@@ -2,10 +2,9 @@ import { globalStyle } from "@vanilla-extract/css";
 import {
   textColor,
   backgroundColor,
-  accentColour,
-  lightTextColour,
-  darkTextColour,
-  placeholderTextColour,
+  accentColor,
+  titleTextColor,
+  placeholderTextColor,
   fwLight,
   fwRegular,
   fwBold,
@@ -24,10 +23,9 @@ globalStyle(":root", {
   vars: {
     [textColor]: "#0D0D0D",
     [backgroundColor]: "#FFFFFF",
-    [accentColour]: "#FF4250",
-    [lightTextColour]: "#F8F8F8",
-    [darkTextColour]: "#363636",
-    [placeholderTextColour]: "#DBDBDB",
+    [accentColor]: "#FF4250",
+    [titleTextColor]: "#F8F8F8",
+    [placeholderTextColor]: "#DBDBDB",
     [fwLight]: "300",
     [fwRegular]: "400",
     [fwBold]: "700",
@@ -45,15 +43,17 @@ globalStyle(":root", {
 
 globalStyle('body[data-theme="light"]', {
   vars: {
-    [textColor]: "#0D0D0D",
-    [backgroundColor]: "#FFFFFF",
+    [textColor]: '#0D0D0D',
+    [backgroundColor]: '#FFFFFF',
+    [titleTextColor]: '#F8F8F8',
   },
 });
 
 globalStyle('body[data-theme="dark"]', {
   vars: {
-    [textColor]: "#FFFFFF",
-    [backgroundColor]: "#0D0D0D",
+    [textColor]: '#FFFFFF',
+    [backgroundColor]: '#0D0D0D',
+    [titleTextColor]: '#363636',
   },
 });
 

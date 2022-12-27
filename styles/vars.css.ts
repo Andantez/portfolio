@@ -3,10 +3,9 @@ import { createVar } from "@vanilla-extract/css";
 // colour variables
 export const textColor = createVar();
 export const backgroundColor = createVar();
-export const accentColour = createVar();
-export const lightTextColour = createVar();
-export const darkTextColour = createVar();
-export const placeholderTextColour = createVar();
+export const accentColor = createVar();
+export const titleTextColor = createVar();
+export const placeholderTextColor = createVar();
 
 // font weight variables
 export const fwLight = createVar();

@@ -1,10 +1,10 @@
 import { style, globalStyle } from "@vanilla-extract/css";
 import {
   gap,
-  accentColour,
+  accentColor,
   fwBold,
   textColor,
-  lightTextColour,
+  titleTextColor,
   fs800,
   fs600,
 } from "../../styles/vars.css";
@@ -35,7 +35,7 @@ export const header = style({
 });
 
 export const name = style({
-  color: accentColour,
+  color: accentColor,
 });
 
 export const title = style({
@@ -43,7 +43,7 @@ export const title = style({
   top: "-4.5rem",
   left: 0,
   fontSize: fs800,
-  color: lightTextColour,
+  color: titleTextColor,
   zIndex: -1,
   lineHeight: 0.875,
   fontWeight: fwBold,
