@@ -1,10 +1,10 @@
-import { Logo } from "../icons";
-import NavbarList from "./NavbarList";
-import { nav, header } from "./Header.css";
-import { merriweather } from "../../lib/fonts";
-import dynamic from "next/dynamic";
+import { Logo } from '../icons';
+import NavbarList from './NavbarList';
+import { nav, header } from './Header.css';
+import { merriweather } from '../../lib/fonts';
+import dynamic from 'next/dynamic';
 
-const ThemeToggle = dynamic(() => import("../Theme"), { ssr: false });
+const ThemeToggle = dynamic(() => import('../Theme'), { ssr: false });
 
 const Header = (): JSX.Element => {
   return (

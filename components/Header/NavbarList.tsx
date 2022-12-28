@@ -1,7 +1,7 @@
-import { navLinks } from "../../data";
-import { navList, navItem, menuBtn } from "./Header.css";
-import { Menu } from "../icons";
-import { NavLink } from "../ui";
+import { navLinks } from '../../data';
+import { navList, navItem, menuBtn } from './Header.css';
+import { Menu } from '../icons';
+import { NavLink } from '../ui';
 
 const NavbarList = (): JSX.Element => {
   return (
