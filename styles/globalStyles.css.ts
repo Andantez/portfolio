@@ -13,6 +13,7 @@ import {
   fs400,
   fs500,
   fs600,
+  fs650,
   fs700,
   fs800,
   fs900,
@@ -34,6 +35,7 @@ globalStyle(":root", {
     [fs400]: "1.125rem",
     [fs500]: "1.5rem",
     [fs600]: "2rem",
+    [fs650]: "3rem",
     [fs700]: "4rem",
     [fs800]: "8rem",
     [fs900]: "13rem",
@@ -43,17 +45,17 @@ globalStyle(":root", {
 
 globalStyle('body[data-theme="light"]', {
   vars: {
-    [textColor]: '#0D0D0D',
-    [backgroundColor]: '#FFFFFF',
-    [titleTextColor]: '#F8F8F8',
+    [textColor]: "#0D0D0D",
+    [backgroundColor]: "#FFFFFF",
+    [titleTextColor]: "#F8F8F8",
   },
 });
 
 globalStyle('body[data-theme="dark"]', {
   vars: {
-    [textColor]: '#FFFFFF',
-    [backgroundColor]: '#0D0D0D',
-    [titleTextColor]: '#363636',
+    [textColor]: "#FFFFFF",
+    [backgroundColor]: "#0D0D0D",
+    [titleTextColor]: "#363636",
   },
 });
 
