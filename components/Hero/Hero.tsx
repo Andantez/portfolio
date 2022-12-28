@@ -1,4 +1,4 @@
-import { Button, Heading } from "../ui";
+import { Button, Heading } from '../ui';
 
 const heading = "I'm Kaloyan, Front-End developer";
 
