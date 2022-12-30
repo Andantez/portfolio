@@ -2,10 +2,9 @@ import { globalStyle } from '@vanilla-extract/css';
 import {
   textColor,
   backgroundColor,
-  accentColour,
-  lightTextColour,
-  darkTextColour,
-  placeholderTextColour,
+  accentColor,
+  titleTextColor,
+  placeholderTextColor,
   fwLight,
   fwRegular,
   fwBold,
@@ -14,6 +13,7 @@ import {
   fs400,
   fs500,
   fs600,
+  fs650,
   fs700,
   fs800,
   fs900,
@@ -24,10 +24,9 @@ globalStyle(':root', {
   vars: {
     [textColor]: '#0D0D0D',
     [backgroundColor]: '#FFFFFF',
-    [accentColour]: '#FF4250',
-    [lightTextColour]: '#F8F8F8',
-    [darkTextColour]: '#363636',
-    [placeholderTextColour]: '#DBDBDB',
+    [accentColor]: '#FF4250',
+    [titleTextColor]: '#F8F8F8',
+    [placeholderTextColor]: '#DBDBDB',
     [fwLight]: '300',
     [fwRegular]: '400',
     [fwBold]: '700',
@@ -36,6 +35,7 @@ globalStyle(':root', {
     [fs400]: '1.125rem',
     [fs500]: '1.5rem',
     [fs600]: '2rem',
+    [fs650]: '3rem',
     [fs700]: '4rem',
     [fs800]: '8rem',
     [fs900]: '13rem',
@@ -47,6 +47,7 @@ globalStyle('body[data-theme="light"]', {
   vars: {
     [textColor]: '#0D0D0D',
     [backgroundColor]: '#FFFFFF',
+    [titleTextColor]: '#F8F8F8',
   },
 });
 
@@ -54,6 +55,7 @@ globalStyle('body[data-theme="dark"]', {
   vars: {
     [textColor]: '#FFFFFF',
     [backgroundColor]: '#0D0D0D',
+    [titleTextColor]: '#363636',
   },
 });
 
