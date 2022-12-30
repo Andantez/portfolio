@@ -1,10 +1,10 @@
-import { style, styleVariants } from "@vanilla-extract/css";
-import { textColor, fs300, fs400, fs700 } from "../../../styles/vars.css";
+import { style, styleVariants } from '@vanilla-extract/css';
+import { textColor, fs300, fs400, fs700 } from '../../../styles/vars.css';
 
 const baseStyle = style({
-  textDecoration: "none",
+  textDecoration: 'none',
   color: textColor,
-  fontFamily: "var(--ff-text)",
+  fontFamily: 'var(--ff-text)',
 });
 
 export const navLink = styleVariants({

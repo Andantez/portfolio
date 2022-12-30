@@ -1,4 +1,4 @@
-import { createVar } from "@vanilla-extract/css";
+import { createVar } from '@vanilla-extract/css';
 
 // colour variables
 export const textColor = createVar();

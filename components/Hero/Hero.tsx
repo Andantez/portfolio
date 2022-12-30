@@ -1,5 +1,5 @@
-import { NavLink } from "../ui";
-import { hero, heroParagraph, section, name, header, title } from "./Hero.css";
+import { NavLink } from '../ui';
+import { hero, heroParagraph, section, name, header, title } from './Hero.css';
 
 const Hero = () => {
   return (
