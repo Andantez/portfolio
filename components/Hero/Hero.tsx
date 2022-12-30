@@ -1,9 +1,9 @@
 import { NavLink } from '../ui';
-import { hero, heroParagraph, section, name, header, title } from './Hero.css';
-
+import { heroParagraph, section, name, header, title } from './Hero.css';
+import { gridContainer } from '../../lib/styles/SharedStyles.css';
 const Hero = () => {
   return (
-    <div className={hero}>
+    <div className={gridContainer.withGap}>
       <section className={section}>
         <h1 className={header}>
           I&apos;m <span className={name}>Kaloyan</span>, Front-End developer

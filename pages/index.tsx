@@ -1,18 +1,11 @@
 import Hero from '../components/Hero';
-import { Heading } from '../components/ui';
+import SubHero from '../components/SubHero';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <div>
-        <Heading
-          accentText="01."
-          accentType="dot"
-          headingText="Some things I've build."
-          title="Projects"
-        />
-      </div>
+      <SubHero />
     </>
   );
 }
