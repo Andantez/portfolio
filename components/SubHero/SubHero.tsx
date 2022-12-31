@@ -10,6 +10,7 @@ const SubHero = () => {
         headingText="Some things I've build."
         title="Projects"
       />
+      {/* TODO to remind me to add paragraph here  */}
     </div>
   );
 };

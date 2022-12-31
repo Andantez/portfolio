@@ -1,3 +1,10 @@
+import {
+  accent,
+  pageTitle,
+  header,
+  section,
+} from '../../../lib/styles/SharedStyles.css';
+
 type Title = 'Projects' | 'About' | 'Contact';
 type AccentText = '.' | '01.' | '02.' | '03.';
 type HeadingProps = {
@@ -14,21 +21,21 @@ const Heading = ({
 }: HeadingProps) => {
   if (accentType === 'number') {
     return (
-      <section>
-        <h1>
-          <span>{accentText}</span> {headingText}
+      <section className={section}>
+        <h1 className={header}>
+          <span className={accent}>{accentText}</span> {headingText}
         </h1>
-        <div>{title}</div>
+        <div className={pageTitle}>{title}</div>
       </section>
     );
   }
   return (
-    <section>
-      <h1>
+    <section className={section}>
+      <h1 className={header}>
         {headingText}
-        <span>{accentText}</span>
+        <span className={accent}>{accentText}</span>
       </h1>
-      <div>{title}</div>
+      <div className={pageTitle}>{title}</div>
     </section>
   );
 };
