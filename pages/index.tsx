@@ -1,18 +1,19 @@
 import Hero from '../components/Hero';
-import { Heading } from '../components/ui';
+import { Grid, Heading } from '../components/ui';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <div>
+      <Grid gap='withoutGap'>
         <Heading
+          accentType="number"
           accentText="01."
-          accentType="dot"
           headingText="Some things I've build."
           title="Projects"
         />
-      </div>
+        {/* TODO add paragraph here  */}
+      </Grid>
     </>
   );
 }

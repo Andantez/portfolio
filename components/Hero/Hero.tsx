@@ -1,21 +1,26 @@
-import { NavLink } from '../ui';
-import { hero, heroParagraph, section, name, header, title } from './Hero.css';
-
+import { Grid, NavLink } from '../ui';
+import { heroParagraph } from './Hero.css';
+import {
+  pageTitle,
+  accent,
+  header,
+  section,
+} from '../../lib/styles/SharedStyles.css';
 const Hero = () => {
   return (
-    <div className={hero}>
+    <Grid gap="withGap">
       <section className={section}>
         <h1 className={header}>
-          I&apos;m <span className={name}>Kaloyan</span>, Front-End developer
+          I&apos;m <span className={accent}>Kaloyan</span>, Front-End developer
         </h1>
-        <div className={title}>Hello</div>
+        <div className={pageTitle}>Hello</div>
       </section>
       <p className={heroParagraph}>
         Coder, Conceptual thinker with passion for UI effects and animations who
         loves to build creative things
       </p>
       <NavLink label="View Projects" href="/projects" textSize="md" />
-    </div>
+    </Grid>
   );
 };
 
