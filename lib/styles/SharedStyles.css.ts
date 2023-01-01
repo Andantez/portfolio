@@ -12,7 +12,7 @@ import {
 } from '../../styles/vars.css';
 
 const gridGap = style({
-  gap,
+  gap
 });
 
 export const grid = style({
@@ -20,7 +20,6 @@ export const grid = style({
   placeContent: 'center',
   height: '100%',
   padding: '0 1rem',
-  gap,
   maxWidth: '1400px',
   overflowX: 'hidden',
   margin: '0 auto',

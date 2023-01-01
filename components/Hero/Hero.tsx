@@ -1,7 +1,6 @@
-import { NavLink } from '../ui';
+import { Grid, NavLink } from '../ui';
 import { heroParagraph } from './Hero.css';
 import {
-  gridContainer,
   pageTitle,
   accent,
   header,
@@ -9,7 +8,7 @@ import {
 } from '../../lib/styles/SharedStyles.css';
 const Hero = () => {
   return (
-    <div className={gridContainer.withGap}>
+    <Grid gap="withGap">
       <section className={section}>
         <h1 className={header}>
           I&apos;m <span className={accent}>Kaloyan</span>, Front-End developer
@@ -21,7 +20,7 @@ const Hero = () => {
         loves to build creative things
       </p>
       <NavLink label="View Projects" href="/projects" textSize="md" />
-    </div>
+    </Grid>
   );
 };
 
