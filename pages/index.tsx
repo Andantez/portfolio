@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import HomepageProjects from '../components/HomepageProjects';
 import { Grid, Heading } from '../components/ui';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         />
         {/* TODO add paragraph here  */}
       </Grid>
+      <HomepageProjects />
     </>
   );
 }
