@@ -6,13 +6,21 @@ import {
 } from '../../../lib/styles/SharedStyles.css';
 
 type Title = 'Projects' | 'About' | 'Contact';
-type AccentText = '.' | '01.' | '02.' | '03.';
-type HeadingProps = {
-  accentType: 'dot' | 'number';
-  accentText: AccentText;
+
+type AccentDot = {
+  accentType: 'dot';
+  accentText: '.';
+};
+type AccentNumber = {
+  accentType: 'number';
+  accentText: '01.' | '02.' | '03.';
+};
+type HeadingText = {
   headingText: string;
   title: Title;
 };
+type HeadingProps = HeadingText & (AccentDot | AccentNumber);
+
 const Heading = ({
   accentType,
   accentText,
