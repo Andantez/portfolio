@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <SubHero /> */}
       <Grid gap='withoutGap'>
         <Heading
           accentType="number"
@@ -13,6 +12,7 @@ export default function Home() {
           headingText="Some things I've build."
           title="Projects"
         />
+        {/* TODO add paragraph here  */}
       </Grid>
     </>
   );
