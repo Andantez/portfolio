@@ -12,7 +12,7 @@ import {
 } from '../../styles/vars.css';
 
 const gridGap = style({
-  gap
+  gap,
 });
 
 export const grid = style({
