@@ -12,7 +12,17 @@ import {
   Sass,
   StyledComponents,
 } from '../components/icons';
-const projects = [
+
+type Stack = {
+  name: string,
+  icon: null |  (() => JSX.Element) 
+}
+type Projects = {
+  name: string,
+  description: string,
+  stack : Stack[]
+}
+const projects: Projects[] = [
   {
     name: 'Meow Portal',
     description:
@@ -46,6 +56,7 @@ const projects = [
     stack: [
       { name: 'React', icon: ReactJS },
       { name: 'Styled Components', icon: StyledComponents },
+      { name: 'Value.js', icon: null },
     ],
   },
 ];
