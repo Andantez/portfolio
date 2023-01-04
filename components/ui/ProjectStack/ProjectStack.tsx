@@ -6,8 +6,8 @@ const ProjectStack = ({ name, Icon }: ProjectStackProps) => {
   console.log(name);
   return (
     <div>
-      <p>{name}</p>
       {Icon && <Icon />}
+      <p>{name}</p>
     </div>
   );
 };

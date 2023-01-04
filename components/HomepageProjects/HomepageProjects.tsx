@@ -1,13 +1,31 @@
 import SingleProject from './SingleProject';
 import { projects } from '../../data';
+import meowPortal from '../../public/meowPortal.png';
+import adrastos from '../../public/adrastos.png';
+import tintsandshades from '../../public/tintsandshades.png';
 
-//  html structure is not final to be changed
 const HomepageProjects = () => {
+  const [firstProject, secondProject, thirdProject] = projects;
   return (
     <div>
-      {projects.map((project) => (
-        <SingleProject key={project.name} {...project} />
-      ))}
+      <SingleProject
+        name={firstProject.name}
+        description={firstProject.description}
+        stack={firstProject.stack}
+        image={meowPortal}
+      />
+      <SingleProject
+        name={secondProject.name}
+        description={secondProject.description}
+        stack={secondProject.stack}
+        image={adrastos}
+      />
+      <SingleProject
+        name={thirdProject.name}
+        description={thirdProject.description}
+        stack={thirdProject.stack}
+        image={tintsandshades}
+      />
     </div>
   );
 };
