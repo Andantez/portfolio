@@ -1,8 +1,8 @@
 import type { Projects } from '../../../data/projects';
-import ProjectStack from '../ProjectStack';
+import { ProjectStack } from '../../ui';
 
 // TODO change the html structure
-const SingleProject = ({ name, description, stack }: Projects) => {
+const SingleProject = ({ name, description, stack, image }: Projects) => {
   return (
     <div>
       <h1>{name}</h1>

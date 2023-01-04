@@ -1,6 +1,6 @@
 type ProjectStackProps = {
   name: string;
-  Icon: null | (() => JSX.Element);
+  Icon: null | React.ComponentType;
 };
 const ProjectStack = ({ name, Icon }: ProjectStackProps) => {
   console.log(name);
