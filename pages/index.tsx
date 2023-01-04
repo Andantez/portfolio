@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Grid gap="withoutGap">
+      <Grid gap="withGap" mediaBreakpoint="atLargeSizeScreen">
         <Heading
           accentType="number"
           accentText="01."
