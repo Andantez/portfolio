@@ -2,7 +2,7 @@ import SingleProject from './SingleProject';
 import { projects } from '../../data';
 import meowPortal from '../../public/meowPortal.png';
 import adrastos from '../../public/adrastos.png';
-import tintsandshades from '../../public/tintsandshades.png';
+import tintsAndShades from '../../public/tintsAndShades.png';
 import { homepageProjects } from './HomepageProjects.css';
 const HomepageProjects = () => {
   const [firstProject, secondProject, thirdProject] = projects;
@@ -24,7 +24,7 @@ const HomepageProjects = () => {
         name={thirdProject.name}
         description={thirdProject.description}
         stack={thirdProject.stack}
-        image={tintsandshades}
+        image={tintsAndShades}
       />
     </div>
   );
