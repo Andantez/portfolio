@@ -3,6 +3,12 @@ import { ProjectStack, Grid } from '../../ui';
 import Link from 'next/link';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
+import {
+  projectInfo,
+  projectName,
+  projectDescription,
+  projectStack,
+} from './SingleProject.css';
 // TODO change the html structure
 type ImageProp = {
   image: StaticImageData;
@@ -15,11 +21,11 @@ const SingleProject = ({
   image,
 }: SingleProjectProps): JSX.Element => {
   return (
-    <Grid gap="withoutGap" mediaBreakpoint="atLargeSizeScreen">
-      <article>
-        <h1>{name}</h1>
-        <p>{description}</p>
-        <div>
+    <Grid gap="withGap" mediaBreakpoint="atLargeSizeScreen">
+      <article className={projectInfo}>
+        <h2 className={projectName}>{name}</h2>
+        <p className={projectDescription}>{description}</p>
+        <div className={projectStack}>
           {stack.map((stk) => (
             <ProjectStack key={stk.name} name={stk.name} Icon={stk.icon} />
           ))}

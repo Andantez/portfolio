@@ -1,11 +1,12 @@
+import { stackWrapper } from './ProjectStack.css';
+
 type ProjectStackProps = {
   name: string;
   Icon: null | React.ComponentType;
 };
 const ProjectStack = ({ name, Icon }: ProjectStackProps) => {
-  console.log(name);
   return (
-    <div>
+    <div className={stackWrapper}>
       {Icon && <Icon />}
       <p>{name}</p>
     </div>

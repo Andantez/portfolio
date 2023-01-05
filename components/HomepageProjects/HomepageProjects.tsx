@@ -3,11 +3,11 @@ import { projects } from '../../data';
 import meowPortal from '../../public/meowPortal.png';
 import adrastos from '../../public/adrastos.png';
 import tintsandshades from '../../public/tintsandshades.png';
-
+import { homepageProjects } from './HomepageProjects.css';
 const HomepageProjects = () => {
   const [firstProject, secondProject, thirdProject] = projects;
   return (
-    <div>
+    <div className={homepageProjects}>
       <SingleProject
         name={firstProject.name}
         description={firstProject.description}
