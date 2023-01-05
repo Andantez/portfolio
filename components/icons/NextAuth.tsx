@@ -1,11 +1,12 @@
 import Image from 'next/image';
-const NextAuth = () => {
+import { IconImgProps } from '../../lib/types/icon';
+const NextAuth = ({ width = 35, height = 35 }: IconImgProps): JSX.Element => {
   return (
     <Image
       src="/nextAuthLogo.png"
       alt="Next Auth Logo"
-      width={35}
-      height={35}
+      width={width}
+      height={height}
     />
   );
 };

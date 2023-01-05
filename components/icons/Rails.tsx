@@ -1,6 +1,9 @@
-const Rails = () => {
+const Rails = ({
+  width = 35,
+  height = 35,
+}: React.SVGProps<SVGSVGElement>): JSX.Element => {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" width={width} height={height}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

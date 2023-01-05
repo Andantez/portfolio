@@ -13,16 +13,7 @@ import {
   StyledComponents,
 } from '../components/icons';
 
-type Stack = {
-  name: string;
-  icon: null | (() => JSX.Element);
-};
-export type Projects = {
-  name: string;
-  description: string;
-  stack: Stack[];
-};
-const projects: Projects[] = [
+const projects = [
   {
     name: 'Meow Portal',
     description:
@@ -61,4 +52,5 @@ const projects: Projects[] = [
   },
 ];
 
+export type Stack = typeof projects[number]['stack'];
 export default projects;

@@ -1,6 +1,6 @@
 import { textColor } from '../../styles/vars.css';
 
-const Sun = () => {
+const Sun = (): JSX.Element => {
   return (
     <svg
       fill="none"

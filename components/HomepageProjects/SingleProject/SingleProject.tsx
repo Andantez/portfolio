@@ -1,4 +1,4 @@
-import type { Projects } from '../../../data/projects';
+// import type { Projects } from '../../../data/projects';
 import { ProjectStack, Grid } from '../../ui';
 import Link from 'next/link';
 import type { StaticImageData } from 'next/image';
@@ -9,17 +9,20 @@ import {
   projectDescription,
   projectStack,
 } from './SingleProject.css';
-// TODO change the html structure
-type ImageProp = {
+import type { Stack } from '../../../data/projects';
+
+type ProjectProps = {
+  name: string;
+  description: string;
+  stack: Stack;
   image: StaticImageData;
 };
-type SingleProjectProps = Projects & ImageProp;
 const SingleProject = ({
   name,
   description,
   stack,
   image,
-}: SingleProjectProps): JSX.Element => {
+}: ProjectProps): JSX.Element => {
   return (
     <Grid gap="withGap" mediaBreakpoint="atLargeSizeScreen">
       <article className={projectInfo}>

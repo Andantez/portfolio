@@ -1,6 +1,9 @@
-const MongoDB = () => {
+const MongoDB = ({
+  width = 35,
+  height = 35,
+}: React.SVGProps<SVGSVGElement>) => {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" width={width} height={height}>
       <path
         fill="#439934"
         fillRule="evenodd"
