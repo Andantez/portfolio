@@ -8,7 +8,7 @@ import {
 } from '../../lib/styles/SharedStyles.css';
 const Hero = () => {
   return (
-    <Grid gap="withGap">
+    <Grid gap="withGap" mediaBreakpoint="atMediumSizeScreen">
       <section className={section}>
         <h1 className={header}>
           I&apos;m <span className={accent}>Kaloyan</span>, Front-End developer

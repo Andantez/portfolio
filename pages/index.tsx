@@ -1,11 +1,12 @@
 import Hero from '../components/Hero';
+import HomepageProjects from '../components/HomepageProjects';
 import { Grid, Heading } from '../components/ui';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Grid gap='withoutGap'>
+      <Grid gap="withGap" mediaBreakpoint="atLargeSizeScreen">
         <Heading
           accentType="number"
           accentText="01."
@@ -14,6 +15,7 @@ export default function Home() {
         />
         {/* TODO add paragraph here  */}
       </Grid>
+      <HomepageProjects />
     </>
   );
 }

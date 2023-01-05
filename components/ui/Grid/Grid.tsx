@@ -2,11 +2,18 @@ import { gridContainer } from '../../../lib/styles/SharedStyles.css';
 
 type GridTypes = {
   children: React.ReactNode;
-  gap: keyof typeof gridContainer
+  gap: Exclude<
+    keyof typeof gridContainer,
+    'atMediumSizeScreen' | 'atLargeSizeScreen'
+  >;
+  mediaBreakpoint: Exclude<
+    keyof typeof gridContainer,
+    'withGap' | 'withoutGap'
+  >;
 };
-const Grid = ({ children, gap }: GridTypes) => {
+const Grid = ({ children, gap, mediaBreakpoint }: GridTypes) => {
   return (
-    <div className={gridContainer[gap]}>
+    <div className={`${gridContainer[gap]} ${gridContainer[mediaBreakpoint]}`}>
       {children}
     </div>
   );

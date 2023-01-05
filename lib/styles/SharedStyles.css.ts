@@ -12,9 +12,25 @@ import {
 } from '../../styles/vars.css';
 
 const gridGap = style({
-  gap
+  gap,
 });
 
+const atMediumSizeScreen = style({
+  '@media': {
+    'screen and (min-width: 37.5rem)': {
+      gridTemplateColumns: 'repeat(12, 1fr)',
+      padding: 0,
+    },
+  },
+});
+const atLargeSizeScreen = style({
+  '@media': {
+    'screen and (min-width: 64rem)': {
+      gridTemplateColumns: 'repeat(12, 1fr)',
+      padding: 0,
+    },
+  },
+});
 export const grid = style({
   display: 'grid',
   placeContent: 'center',
@@ -23,16 +39,13 @@ export const grid = style({
   maxWidth: '1400px',
   overflowX: 'hidden',
   margin: '0 auto',
-  '@media': {
-    'screen and (min-width: 37.5rem)': {
-      gridTemplateColumns: 'repeat(12, 1fr)',
-    },
-  },
 });
 
 export const gridContainer = styleVariants({
   withoutGap: [grid],
   withGap: [gridGap, grid],
+  atMediumSizeScreen: [atMediumSizeScreen],
+  atLargeSizeScreen: [atLargeSizeScreen],
 });
 
 export const accent = style({
