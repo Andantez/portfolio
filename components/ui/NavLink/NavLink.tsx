@@ -7,7 +7,7 @@ interface NavLinkProps extends NavigationLinks {
 }
 const NavLink = ({ label, href, textSize = 'sm' }: NavLinkProps) => {
   return (
-    <Link className={navLink[textSize]} href={href}>
+    <Link className={navLink[textSize]} href={href} data-link="nav">
       {label}
     </Link>
   );

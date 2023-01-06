@@ -21,7 +21,7 @@ export const heroParagraph = style({
   },
 });
 
-globalStyle(`${grid} a`, {
+globalStyle(`${grid} a[data-link="nav"]`, {
   maxWidth: 'fit-content',
   marginLeft: '2rem',
   fontWeight: fwBold,
