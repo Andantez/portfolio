@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { fs200, fwLight, textColor } from '../../../styles/vars.css';
+import { fs100, fs200, fwLight, textColor } from '../../../styles/vars.css';
 
 export const stackWrapper = style({
   display: 'grid',
@@ -11,6 +11,6 @@ export const stackWrapper = style({
 export const stackName = style({
   fontFamily: 'var(--ff-text)',
   fontWeight: fwLight,
-  fontSize: fs200,
+  fontSize: fs100,
   color: textColor,
 });

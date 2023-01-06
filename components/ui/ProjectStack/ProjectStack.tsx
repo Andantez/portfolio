@@ -3,7 +3,7 @@ import { stackWrapper, stackName } from './ProjectStack.css';
 
 type ProjectStackProps = {
   name: string;
-  Icon:
+Icon:
     | null
     | React.ElementType<IconSvgProps>
     | React.ElementType<IconImgProps>;
@@ -11,7 +11,7 @@ type ProjectStackProps = {
 const ProjectStack = ({ name, Icon }: ProjectStackProps): JSX.Element => {
   return (
     <div className={stackWrapper}>
-      {Icon && <Icon width={25} height={25} />}
+      {Icon && <Icon width={20} height={20} />}
       <p className={stackName}>{name}</p>
     </div>
   );
