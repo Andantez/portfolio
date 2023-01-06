@@ -3,7 +3,7 @@ import { stackWrapper, stackName } from './ProjectStack.css';
 
 type ProjectStackProps = {
   name: string;
-Icon:
+  Icon:
     | null
     | React.ElementType<IconSvgProps>
     | React.ElementType<IconImgProps>;
