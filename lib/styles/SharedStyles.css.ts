@@ -31,13 +31,14 @@ const atLargeSizeScreen = style({
     },
   },
 });
+// Commented out overflow for now 
 export const grid = style({
   display: 'grid',
   placeContent: 'center',
   height: '100%',
   padding: '0 1rem',
   maxWidth: '1400px',
-  overflowX: 'hidden',
+  // overflowX: 'hidden', 
   margin: '0 auto',
 });
 
