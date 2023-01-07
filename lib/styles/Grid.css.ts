@@ -73,6 +73,14 @@ export const grid = recipe({
           },
         },
       },
+      900: {
+        '@media': {
+          'screen and (min-width: 56.25rem)': {
+            gridTemplateColumns: 'repeat(12, 1fr)',
+            padding: 0,
+          },
+        },
+      },
       1024: {
         '@media': {
           'screen and (min-width: 64rem)': {
