@@ -24,7 +24,7 @@ const SingleProject = ({
   image,
 }: ProjectProps): JSX.Element => {
   return (
-    <Grid gap="withGap" mediaBreakpoint="atLargeSizeScreen">
+    <Grid gap="medium" height="100%">
       <article className={projectInfo}>
         <h2 className={projectName}>{name}</h2>
         <p className={projectDescription}>{description}</p>

@@ -1,22 +1,15 @@
-import { gridContainer } from '../../../lib/styles/SharedStyles.css';
-
-type GridTypes = {
+import { grid } from '../../../lib/styles/Grid.css';
+import type { GridVariants } from '../../../lib/styles/Grid.css';
+type GridProps = {
   children: React.ReactNode;
-  gap: Exclude<
-    keyof typeof gridContainer,
-    'atMediumSizeScreen' | 'atLargeSizeScreen'
-  >;
-  mediaBreakpoint: Exclude<
-    keyof typeof gridContainer,
-    'withGap' | 'withoutGap'
-  >;
-};
-const Grid = ({ children, gap, mediaBreakpoint }: GridTypes) => {
-  return (
-    <div className={`${gridContainer[gap]} ${gridContainer[mediaBreakpoint]}`}>
-      {children}
-    </div>
-  );
+} & GridVariants;
+
+// export const GridTest = ({children,...props}: GridTestProps) => {
+//   return ( <div className={gridTest({...props})}>{children}</div> );
+// }
+
+const Grid = ({ children, ...props }: GridProps) => {
+  return <div className={grid({ ...props })}>{children}</div>;
 };
 
 export default Grid;

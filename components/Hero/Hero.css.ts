@@ -1,6 +1,6 @@
 import { style, globalStyle } from '@vanilla-extract/css';
 import { fwBold, textColor, fs400 } from '../../styles/vars.css';
-import { grid } from '../../lib/styles/SharedStyles.css';
+import { grid } from '../../lib/styles/Grid.css';
 
 export const heroParagraph = style({
   fontFamily: 'var(--ff-text)',
@@ -21,7 +21,7 @@ export const heroParagraph = style({
   },
 });
 
-globalStyle(`${grid} a[data-link="nav"]`, {
+globalStyle(`${grid()} a[data-link="nav"]`, {
   maxWidth: 'fit-content',
   marginLeft: '2rem',
   fontWeight: fwBold,
