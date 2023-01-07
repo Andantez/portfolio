@@ -25,8 +25,15 @@ export const projectDescription = style({
   fontFamily: 'var(--ff-text)',
   fontSize: fs300,
   fontWeight: fwLight,
+  color: textColor,
 });
 
 export const projectStack = style({
   display: 'flex',
+  flexWrap: 'wrap',
+  gap: '1rem',
+});
+
+export const projectImgWrapper = style({
+  order: 1,
 });

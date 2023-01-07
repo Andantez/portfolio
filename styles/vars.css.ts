@@ -13,6 +13,7 @@ export const fwRegular = createVar();
 export const fwBold = createVar();
 
 // font size variables
+export const fs100 = createVar();
 export const fs200 = createVar();
 export const fs300 = createVar();
 export const fs400 = createVar();

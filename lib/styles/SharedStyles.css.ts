@@ -1,7 +1,7 @@
-import { style, styleVariants } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
+
 import {
   accentColor,
-  gap,
   fs800,
   fs900,
   titleTextColor,
@@ -10,43 +10,6 @@ import {
   fs650,
   fs600,
 } from '../../styles/vars.css';
-
-const gridGap = style({
-  gap,
-});
-
-const atMediumSizeScreen = style({
-  '@media': {
-    'screen and (min-width: 37.5rem)': {
-      gridTemplateColumns: 'repeat(12, 1fr)',
-      padding: 0,
-    },
-  },
-});
-const atLargeSizeScreen = style({
-  '@media': {
-    'screen and (min-width: 64rem)': {
-      gridTemplateColumns: 'repeat(12, 1fr)',
-      padding: 0,
-    },
-  },
-});
-export const grid = style({
-  display: 'grid',
-  placeContent: 'center',
-  height: '100%',
-  padding: '0 1rem',
-  maxWidth: '1400px',
-  overflowX: 'hidden',
-  margin: '0 auto',
-});
-
-export const gridContainer = styleVariants({
-  withoutGap: [grid],
-  withGap: [gridGap, grid],
-  atMediumSizeScreen: [atMediumSizeScreen],
-  atLargeSizeScreen: [atLargeSizeScreen],
-});
 
 export const accent = style({
   color: accentColor,

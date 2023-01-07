@@ -1,6 +1,5 @@
 // import type { Projects } from '../../../data/projects';
-import { ProjectStack, Grid } from '../../ui';
-import Link from 'next/link';
+import { ProjectStack, Grid, ProjectLinks } from '../../ui';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import {
@@ -8,6 +7,7 @@ import {
   projectName,
   projectDescription,
   projectStack,
+  projectImgWrapper,
 } from './SingleProject.css';
 import type { Stack } from '../../../data/projects';
 
@@ -24,7 +24,7 @@ const SingleProject = ({
   image,
 }: ProjectProps): JSX.Element => {
   return (
-    <Grid gap="withGap" mediaBreakpoint="atLargeSizeScreen">
+    <Grid gap="medium" height="100%">
       <article className={projectInfo}>
         <h2 className={projectName}>{name}</h2>
         <p className={projectDescription}>{description}</p>
@@ -33,13 +33,10 @@ const SingleProject = ({
             <ProjectStack key={stk.name} name={stk.name} Icon={stk.icon} />
           ))}
         </div>
-        <div>
-          <Link href="/">Visit Live</Link>
-          <Link href="/">Source Code</Link>
-        </div>
+        <ProjectLinks liveUrl="/" sourceUrl="/" />
       </article>
-      <div>
-        <Image src={image} alt={name} priority />
+      <div className={projectImgWrapper}>
+        <Image src={image} alt={name} priority style={{ height: 'auto' }} />
       </div>
     </Grid>
   );
