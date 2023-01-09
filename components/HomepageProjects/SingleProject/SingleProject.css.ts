@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css';
+import { style, styleVariants } from '@vanilla-extract/css';
 
 import {
   fs300,
@@ -51,14 +51,12 @@ export const projectStack = style({
   },
 });
 
-export const projectImgWrapper = style({
+export const projectImgWrapperBase = style({
   padding: '0 1rem',
   position: 'relative',
   '::before': {
     content: '',
     position: 'absolute',
-    //  TODO: change the background color based on the project 
-    backgroundColor: 'blue',
     inset: '-1rem 0 1rem 0',
     zIndex: -1,
   },
@@ -70,4 +68,13 @@ export const projectImgWrapper = style({
       },
     },
   },
+});
+
+export const projectImgWrapper = styleVariants({
+  red: [projectImgWrapperBase, { '::before': { backgroundColor: '#FF4250' } }],
+  blue: [projectImgWrapperBase, { '::before': { backgroundColor: '#6A8BC2' } }],
+  darkGrey: [
+    projectImgWrapperBase,
+    { '::before': { backgroundColor: '#325055' } },
+  ],
 });

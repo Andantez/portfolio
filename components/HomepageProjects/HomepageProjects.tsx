@@ -13,18 +13,21 @@ const HomepageProjects = () => {
         description={firstProject.description}
         stack={firstProject.stack}
         image={meowPortal}
+        panelColor="blue"
       />
       <SingleProject
         name={secondProject.name}
         description={secondProject.description}
         stack={secondProject.stack}
         image={adrastos}
+        panelColor="red"
       />
       <SingleProject
         name={thirdProject.name}
         description={thirdProject.description}
         stack={thirdProject.stack}
         image={tintsAndShades}
+        panelColor="darkGrey"
       />
     </>
   );
