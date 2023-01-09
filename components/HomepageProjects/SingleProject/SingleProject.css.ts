@@ -10,9 +10,18 @@ import {
 } from '../../../styles/vars.css';
 
 export const projectInfo = style({
-  order: 2,
   display: 'grid',
   gap,
+  padding: '0 1rem',
+  '@media': {
+    'screen and (min-width: 46.875rem)': {
+      textAlign: 'center',
+    },
+    'screen and (min-width: 64rem)': {
+      textAlign: 'left',
+      padding: 0,
+    },
+  },
 });
 export const projectName = style({
   fontFamily: 'var(--ff-text)',
@@ -32,8 +41,33 @@ export const projectStack = style({
   display: 'flex',
   flexWrap: 'wrap',
   gap: '1rem',
+  '@media': {
+    'screen and (min-width: 46.875rem)': {
+      justifyContent: 'center',
+    },
+    'screen and (min-width: 64rem)': {
+      justifyContent: 'flex-start',
+    },
+  },
 });
 
 export const projectImgWrapper = style({
-  order: 1,
+  padding: '0 1rem',
+  position: 'relative',
+  '::before': {
+    content: '',
+    position: 'absolute',
+    //  TODO: change the background color based on the project 
+    backgroundColor: 'blue',
+    inset: '-1rem 0 1rem 0',
+    zIndex: -1,
+  },
+  '@media': {
+    'screen and (min-width: 56.25rem)': {
+      padding: '0 2rem',
+      '::before': {
+        inset: '-2rem 0 2rem 0',
+      },
+    },
+  },
 });

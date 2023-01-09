@@ -5,6 +5,11 @@ export const flex = recipe({
     display: 'flex',
     maxWidth: '1400px',
     margin: '0 auto',
+    '@media': {
+      'screen and (min-width: 87.5rem)': {
+        padding: '0 !important',
+      },
+    },
   },
   variants: {
     flexWrap: {
@@ -21,6 +26,12 @@ export const flex = recipe({
       },
       column: {
         flexDirection: 'column',
+      },
+      columnReverse: {
+        flexDirection: 'column-reverse',
+      },
+      rowReverse: {
+        flexDirection: 'row-reverse',
       },
     },
     justifyContent: {
@@ -202,6 +213,64 @@ export const flex = recipe({
         '@media': {
           'screen and (min-width: 75rem)': {
             flexWrap: 'nowrap',
+          },
+        },
+      },
+    },
+    paddingMediaBreakpoint: {
+      padding1At600: {
+        '@media': {
+          'screen and (min-width: 37.5rem)': {
+            padding: '0 1rem',
+          },
+        },
+      },
+      padding1At900: {
+        '@media': {
+          'screen and (min-width: 56.25rem)': {
+            padding: '0 1rem',
+          },
+        },
+      },
+      padding1At1024: {
+        '@media': {
+          'screen and (min-width: 64rem)': {
+            padding: '0 1rem',
+          },
+        },
+      },
+      padding1At1200: {
+        '@media': {
+          'screen and (min-width: 75rem)': {
+            padding: '0 1rem',
+          },
+        },
+      },
+      padding2At600: {
+        '@media': {
+          'screen and (min-width: 37.5rem)': {
+            padding: '0 2rem',
+          },
+        },
+      },
+      padding2At900: {
+        '@media': {
+          'screen and (min-width: 56.25rem)': {
+            padding: '0 2rem',
+          },
+        },
+      },
+      padding2At1024: {
+        '@media': {
+          'screen and (min-width: 64rem)': {
+            padding: '0 2rem',
+          },
+        },
+      },
+      padding2At1200: {
+        '@media': {
+          'screen and (min-width: 75rem)': {
+            padding: '0 2rem',
           },
         },
       },

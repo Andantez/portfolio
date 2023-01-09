@@ -1,5 +1,5 @@
 // import type { Projects } from '../../../data/projects';
-import { ProjectStack, Grid, ProjectLinks } from '../../ui';
+import { ProjectStack, ProjectLinks, Flex } from '../../ui';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import {
@@ -24,7 +24,14 @@ const SingleProject = ({
   image,
 }: ProjectProps): JSX.Element => {
   return (
-    <Grid gap="medium" height="100%">
+    <Flex
+      height="100%"
+      alignItems="center"
+      flexDirection="columnReverse"
+      gap="small"
+      directionMediaBreakpoint="rowAt1024"
+      paddingMediaBreakpoint="padding2At1024"
+    >
       <article className={projectInfo}>
         <h2 className={projectName}>{name}</h2>
         <p className={projectDescription}>{description}</p>
@@ -38,7 +45,7 @@ const SingleProject = ({
       <div className={projectImgWrapper}>
         <Image src={image} alt={name} priority style={{ height: 'auto' }} />
       </div>
-    </Grid>
+    </Flex>
   );
 };
 
