@@ -1,5 +1,5 @@
 // import type { Projects } from '../../../data/projects';
-import { ProjectStack, Grid, ProjectLinks } from '../../ui';
+import { ProjectStack, ProjectLinks, Flex } from '../../ui';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import {
@@ -10,21 +10,32 @@ import {
   projectImgWrapper,
 } from './SingleProject.css';
 import type { Stack } from '../../../data/projects';
+import { boxShadow } from '../../../styles/vars.css';
 
 type ProjectProps = {
   name: string;
   description: string;
   stack: Stack;
   image: StaticImageData;
+  panelColor: keyof typeof projectImgWrapper;
 };
 const SingleProject = ({
   name,
   description,
   stack,
   image,
+  panelColor,
 }: ProjectProps): JSX.Element => {
   return (
-    <Grid gap="medium" height="100%">
+    <Flex
+      minHeight="100%"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="columnReverse"
+      gap="small"
+      directionMediaBreakpoint="rowAt1024"
+      paddingMediaBreakpoint="padding2At1024"
+    >
       <article className={projectInfo}>
         <h2 className={projectName}>{name}</h2>
         <p className={projectDescription}>{description}</p>
@@ -35,10 +46,15 @@ const SingleProject = ({
         </div>
         <ProjectLinks liveUrl="/" sourceUrl="/" />
       </article>
-      <div className={projectImgWrapper}>
-        <Image src={image} alt={name} priority style={{ height: 'auto' }} />
+      <div className={projectImgWrapper[panelColor]}>
+        <Image
+          src={image}
+          alt={name}
+          priority
+          style={{ height: 'auto', boxShadow }}
+        />
       </div>
-    </Grid>
+    </Flex>
   );
 };
 
