@@ -24,8 +24,16 @@ export const fs700 = createVar();
 export const fs800 = createVar();
 export const fs900 = createVar();
 
-// gap variable
-export const gap = createVar();
+// gap variables
+export const gap100 = createVar();
+export const gap150 = createVar();
+export const gap200 = createVar();
+export const gap250 = createVar();
+export const gap300 = createVar();
+export const gap350 = createVar();
+export const gap400 = createVar();
+export const gap450 = createVar();
+export const gap500 = createVar();
 
 // box shadow
 export const boxShadow = createVar();

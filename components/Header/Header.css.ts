@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { gap } from '../../styles/vars.css';
+import { gap150 } from '../../styles/vars.css';
 
 export const header = style({
   position: 'absolute',
@@ -15,7 +15,7 @@ export const nav = style({
   margin: '0 auto',
   '@media': {
     'screen and (min-width: 64rem)': {
-      gap,
+      gap: gap150,
     },
   },
 });
@@ -25,7 +25,7 @@ export const navList = style({
   '@media': {
     'screen and (min-width: 64rem)': {
       display: 'flex',
-      gap,
+      gap: gap150,
     },
   },
 });

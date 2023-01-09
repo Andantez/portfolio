@@ -3,15 +3,15 @@ import {
   fs300,
   fwBold,
   textColor,
-  gap,
   backgroundColor,
   fs200,
+  gap150,
 } from '../../../styles/vars.css';
 
 export const projectLinksWrapper = style({
   display: 'flex',
   flexWrap: 'wrap',
-  gap,
+  gap: gap150,
   marginTop: '1.5rem',
   '@media': {
     'screen and (min-width: 37.5rem)': {

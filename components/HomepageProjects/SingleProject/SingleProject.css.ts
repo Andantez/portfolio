@@ -6,13 +6,14 @@ import {
   fwBold,
   fwLight,
   textColor,
-  gap,
   fs700,
+  gap100,
+  gap150,
 } from '../../../styles/vars.css';
 
 export const projectInfo = style({
   display: 'grid',
-  gap,
+  gap: gap100,
   padding: '0 1rem',
   '@media': {
     'screen and (min-width: 46.875rem)': {
@@ -50,7 +51,7 @@ export const projectDescription = style({
 export const projectStack = style({
   display: 'flex',
   flexWrap: 'wrap',
-  gap: '1rem',
+  gap: gap150,
   '@media': {
     'screen and (min-width: 46.875rem)': {
       justifyContent: 'center',
