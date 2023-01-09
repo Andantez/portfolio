@@ -19,6 +19,8 @@ import {
   fs800,
   fs900,
   gap,
+  boxShadow,
+  shadowColor,
 } from './vars.css';
 
 globalStyle(':root', {
@@ -42,6 +44,12 @@ globalStyle(':root', {
     [fs800]: '8rem',
     [fs900]: '13rem',
     [gap]: '1.5em',
+    [boxShadow]: `0px 0.4px 0.4px hsl(${shadowColor} / 0.44),
+    0px 0.8px 0.7px -0.9px hsl(${shadowColor} / 0.38),
+    0px 1.7px 1.6px -1.9px hsl(${shadowColor} / 0.32),
+    0px 3.9px 3.6px -2.8px hsl(${shadowColor} / 0.26),
+    -0.1px 8.1px 7.5px -3.8px hsl(${shadowColor} / 0.2);`,
+    [shadowColor]: '0deg 0% 63%',
   },
 });
 

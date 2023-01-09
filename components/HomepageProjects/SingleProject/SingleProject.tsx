@@ -10,6 +10,7 @@ import {
   projectImgWrapper,
 } from './SingleProject.css';
 import type { Stack } from '../../../data/projects';
+import { boxShadow } from '../../../styles/vars.css';
 
 type ProjectProps = {
   name: string;
@@ -27,7 +28,7 @@ const SingleProject = ({
 }: ProjectProps): JSX.Element => {
   return (
     <Flex
-      height="100%"
+      minHeight="100%"
       alignItems="center"
       justifyContent="center"
       flexDirection="columnReverse"
@@ -46,7 +47,12 @@ const SingleProject = ({
         <ProjectLinks liveUrl="/" sourceUrl="/" />
       </article>
       <div className={projectImgWrapper[panelColor]}>
-        <Image src={image} alt={name} priority style={{ height: 'auto' }} />
+        <Image
+          src={image}
+          alt={name}
+          priority
+          style={{ height: 'auto', boxShadow }}
+        />
       </div>
     </Flex>
   );

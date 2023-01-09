@@ -8,6 +8,7 @@ export const flex = recipe({
     '@media': {
       'screen and (min-width: 87.5rem)': {
         padding: '0 !important',
+        gap: '3rem',
       },
     },
   },
@@ -72,6 +73,11 @@ export const flex = recipe({
       '100%': { height: '100%' },
       auto: { height: 'auto' },
       '100vh': { height: '100vh' },
+    },
+    minHeight: {
+      '100%': { minHeight: '100%' },
+      auto: { minHeight: 'auto' },
+      '100vh': { minHeight: '100vh' },
     },
     gap: {
       noGap: {

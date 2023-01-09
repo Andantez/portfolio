@@ -7,6 +7,7 @@ import {
   fwLight,
   textColor,
   gap,
+  fs700,
 } from '../../../styles/vars.css';
 
 export const projectInfo = style({
@@ -20,6 +21,10 @@ export const projectInfo = style({
     'screen and (min-width: 64rem)': {
       textAlign: 'left',
       padding: 0,
+      flex: 1,
+    },
+    'screen and (min-width: 87.5rem)': {
+      flexBasis: '45%',
     },
   },
 });
@@ -28,6 +33,11 @@ export const projectName = style({
   fontWeight: fwBold,
   fontSize: fs600,
   color: textColor,
+  '@media': {
+    'screen and (min-width: 87.5rem)': {
+      fontSize: fs700,
+    },
+  },
 });
 
 export const projectDescription = style({
@@ -66,6 +76,12 @@ export const projectImgWrapperBase = style({
       '::before': {
         inset: '-2rem 0 2rem 0',
       },
+    },
+    'screen and (min-width: 64rem)': {
+      flex: 1,
+    },
+    'screen and (min-width: 87.5rem)': {
+      flexBasis: '55%',
     },
   },
 });

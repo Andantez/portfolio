@@ -5,24 +5,27 @@ import {
   textColor,
   gap,
   backgroundColor,
+  fs200,
 } from '../../../styles/vars.css';
 
 export const projectLinksWrapper = style({
   display: 'flex',
   flexWrap: 'wrap',
   gap,
+  marginTop: '1.5rem',
   '@media': {
     'screen and (min-width: 37.5rem)': {
       flexWrap: 'nowrap',
-      // justifyContent: 'flex-start'
     },
     'screen and (min-width: 46.875rem)': {
-      // justifyContent: 'center',
       margin: '0 8rem 0',
     },
     'screen and (min-width: 64rem)': {
       justifyContent: 'flex-start',
       margin: '0',
+    },
+    'screen and (min-width: 87.5rem)': {
+      marginTop: '1.5rem',
     },
   },
 });
@@ -30,18 +33,21 @@ export const projectLinksWrapper = style({
 export const projectLink = style({
   fontFamily: 'var(--ff-text)',
   fontWeight: fwBold,
-  fontSize: fs300,
+  fontSize: fs200,
   color: backgroundColor,
   backgroundColor: textColor,
   textDecoration: 'none',
-  padding: '.75rem',
+  padding: '.5rem 1rem',
   borderRadius: '.25rem',
   textAlign: 'center',
   width: '100%',
   '@media': {
     'screen and (min-width: 64rem)': {
       width: 'auto',
-      padding: '0.5rem 2rem',
+    },
+    'screen and (min-width: 87.5rem)': {
+      width: 'auto',
+      fontSize: fs300,
     },
   },
 });

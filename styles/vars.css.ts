@@ -26,3 +26,7 @@ export const fs900 = createVar();
 
 // gap variable
 export const gap = createVar();
+
+// box shadow
+export const boxShadow = createVar();
+export const shadowColor = createVar();
