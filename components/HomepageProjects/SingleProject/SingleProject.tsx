@@ -32,7 +32,7 @@ const SingleProject = ({
       alignItems="center"
       justifyContent="center"
       flexDirection="columnReverse"
-      gap="small"
+      gap="medium"
       directionMediaBreakpoint="rowAt1024"
       paddingMediaBreakpoint="padding2At1024"
     >
@@ -51,6 +51,7 @@ const SingleProject = ({
           src={image}
           alt={name}
           priority
+          quality={100}
           style={{ height: 'auto', boxShadow }}
         />
       </div>

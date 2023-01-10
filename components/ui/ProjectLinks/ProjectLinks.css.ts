@@ -18,7 +18,7 @@ export const projectLinksWrapper = style({
       flexWrap: 'nowrap',
     },
     'screen and (min-width: 46.875rem)': {
-      margin: '0 8rem 0',
+      margin: '1.5rem 8rem 0',
     },
     'screen and (min-width: 64rem)': {
       justifyContent: 'flex-start',
