@@ -12,9 +12,9 @@ export default function Document() {
               if ( window.localStorage.getItem('theme')) {
                 return window.localStorage.getItem('theme')
               }
-              return window.matchMedia('prefer-color-scheme: light').matches
+              return window.matchMedia('(prefers-color-scheme: light)').matches
                 ? 'light'
-                : 'dark';
+                : 'dark'
             }
             document.body.dataset.theme = getThemePreference();
           `}
