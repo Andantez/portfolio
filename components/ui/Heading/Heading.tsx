@@ -33,8 +33,7 @@ const Heading = ({
         <h1 className={header}>
           <span className={accent}>{accentText}</span> {headingText}
         </h1>
-        {/* <div className={pageTitle}>{title}</div> */}
-        {/* Commented out temporary */}
+        <div className={pageTitle}>{title}</div>
       </section>
     );
   }
