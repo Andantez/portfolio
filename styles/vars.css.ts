@@ -17,6 +17,7 @@ export const fs100 = createVar();
 export const fs200 = createVar();
 export const fs300 = createVar();
 export const fs400 = createVar();
+export const fs450 = createVar();
 export const fs500 = createVar();
 export const fs600 = createVar();
 export const fs650 = createVar();
