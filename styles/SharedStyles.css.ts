@@ -32,7 +32,7 @@ export const aboutSubHeading = style({
       gridColumn: '3 / span 10',
     },
     'screen and (min-width: 87.5rem)': {
-      gridColumn: '3 / span 7',
+      gridColumn: '3 / span 10',
       fontSize: fs600,
     },
   },
@@ -51,7 +51,7 @@ export const aboutDescription = style({
       gridColumn: '4 / -2',
     },
     'screen and (min-width: 87.5rem)': {
-      gridColumn: '4 / span 6',
+      gridColumn: '4 / span 8',
       fontSize: fs400,
       marginTop: '1rem',
     },
